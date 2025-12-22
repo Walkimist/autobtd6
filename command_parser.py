@@ -33,14 +33,10 @@ def parseCommands(content):
     for i, command in enumerate(rawCommands):
         buffer = command.split(",")
         if buffer[0] == "U":
-            commands.append([buffer[0], buffer[1], int(buffer[2]), int(buffer[3])])
+            if len(buffer) == 3:
+                buffer.append(0)
+            commands.append([buffer[0], buffer[1], buffer[2], buffer[3]])
         else:
             commands.append([buffer[0], buffer[1]])
 
     return commands
-
-
-p = parsePositions(splitContent)
-c = parseCommands(splitContent)
-
-print(p, c)
