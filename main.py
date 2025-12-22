@@ -10,15 +10,16 @@ COMMAND = [GAMEPATH, "arg1", "arg2"]
 
 
 def debugCursorGetScreenPositions():
+    print(
+        'listening for "-" key to record cursor position. Press "-" to record position'
+    )
     i = 0
     points = {}
-    key = ""
-    while i < 10:
-        key = keyboard.read_hotkey()
-        if key == "-":
-            points[i] = pyautogui.position()
-            print(points[i], i)
-            i += 1
+    while i < 20:
+        keyboard.wait("-")
+        points[i] = pyautogui.position()
+        print(points[i], i)
+        i += 1
     print(points)
 
 
