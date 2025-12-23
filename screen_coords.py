@@ -28,6 +28,8 @@ COORDS = {
     "back": [76, 55],
     "en": [489, 205],
     "home": [844, 839],
+    "gamemodePopup": [958, 765],
+    "continuePopup": [1123, 729]
 }
 
 MONEY_AREA = [366, 19, 184, 43]

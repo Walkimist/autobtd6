@@ -27,6 +27,7 @@ def selectDifficulty(difficulty):
 
 def selectMode(mode):
     moveAndClick(COORDS[GAMEMODES[mode]])
+    closeContinuePopup()
 
 
 def selectMap(map, difficulty, mode):
@@ -51,6 +52,14 @@ def returnToMenu():
     pyautogui.keyUp("esc")
     time.sleep(0.2)
     moveAndClick(COORDS["home"])
+
+
+def closeContinuePopup():
+    moveAndClick(COORDS['continuePopup'])
+
+
+def closeGamemodePopup():
+    moveAndClick(COORDS['gamemodePopup'])
 
 
 def moveAndClick(pos):
