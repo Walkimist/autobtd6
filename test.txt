@@ -1,15 +1,69 @@
 p:
-836,697
-1165,259
-502,788
-835,388
-1558,557
-1548,650
+835, 696
+504, 269
+1226, 883
+1166, 260
+831, 384
+89, 478
+107, 594
+67, 686
+835, 323
+1555, 565
+837, 757
 c:
-B,hero
-B,sub
-B,sub
+B,quincy
+B,dart monkey
 B,sniper
-B,heli
-U,sub,0,1
-U,heli,0,1
+B,monkey sub
+U,monkey sub,top
+U,monkey sub,top
+U,monkey sub,bot
+U,monkey sub,bot
+B,druid
+U,druid,mid
+U,druid,mid
+U,druid,top
+U,druid,mid
+U,monkey sub,bot
+B,monkey village
+B,heli pilot
+U,heli pilot,top
+U,heli pilot,top
+U,heli pilot,bot
+U,heli pilot,bot
+U,heli pilot,bot
+U,monkey village,mid
+U,monkey village,mid
+B,alchemist
+U,alchemist,top
+U,alchemist,top
+U,alchemist,top
+U,alchemist,mid
+U,alchemist,mid
+U,monkey village,top
+U,monkey village,top
+U,heli pilot,bot
+U,druid,mid
+U,heli pilot,bot
+U,druid,mid
+B,alchemist
+U,alchemist,top,1
+U,alchemist,top,1
+U,alchemist,top,1
+U,alchemist,mid,1
+U,alchemist,mid,1
+U,monkey village,mid
+B,mortar monkey
+U,mortar monkey,bot
+U,mortar monkey,bot
+U,mortar monkey,bot
+U,mortar monkey,mid
+U,mortar monkey,mid
+B,ice monkey
+U,ice monkey,top
+U,ice monkey,top
+U,ice monkey,top
+U,ice monkey,top
+U,ice monkey,top
+U,ice monkey,mid
+U,ice monkey,mid
