@@ -33,6 +33,14 @@ def runScript():
     selectLanguage("en")
 
 
+class Tower:
+    def __init__(self, name, position, id):
+        self.name = name
+        self.position = position
+        self.id = id
+        self.upgrades = {"top": 0, "mid": 0, "bot": 0}
+
+
 # displayInGameCash()
 # debugCursorGetScreenPositions()
 # runScript()

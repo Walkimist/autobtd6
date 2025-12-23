@@ -19,7 +19,7 @@ def buyTower(name, coords):
     moveAndClick(coords)
 
 
-def upgradeTower(coords, path):
+def upgradeTower(tower, coords, path):
     moveAndClick(coords)
     pydirectinput.press(PATH[path])
     pyautogui.press("esc")
