@@ -1,9 +1,3 @@
-with open("test.txt", "r") as f:
-    content = f.read()
-
-splitContent = content.split("\n")
-
-
 def parsePositions(content):
     rawPositions = []
     for entry in content:
@@ -32,11 +26,17 @@ def parseCommands(content):
     commands = []
     for i, command in enumerate(rawCommands):
         buffer = command.split(",")
+        if buffer[0] == "M":
+            if len(buffer) == 3:
+                buffer.append(0)
+            commands.append({'type': buffer[0], 'name': buffer[1], 'mode': buffer[2], 'id': int(buffer[3])})
         if buffer[0] == "U":
             if len(buffer) == 3:
                 buffer.append(0)
-            commands.append([buffer[0], buffer[1], buffer[2], buffer[3]])
-        else:
-            commands.append([buffer[0], buffer[1]])
+            commands.append({'type': buffer[0], 'name': buffer[1], 'path': buffer[2], 'id': int(buffer[3])})
+        elif buffer[0] == "B":
+            if len(buffer) == 2:
+                buffer.append(0)
+            commands.append({'type': buffer[0], 'name': buffer[1], 'id': int(buffer[2])})
 
     return commands
